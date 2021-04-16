@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>undo</title>
+    <g id="Flat-Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="landingpage" transform="translate(-120.000000, -1480.000000)" stroke="#3381FF" stroke-width="1.5">
+            <g id="undo" transform="translate(120.000000, 1480.000000)">
+                <g id="invite" transform="translate(7.500000, 8.000000)">
+                    <path d="M9,9 C4.02943725,9 0,13.0294373 0,18" id="椭圆形"></path>
+                    <path d="M13.4155087,9 C11.8109747,9 10.3045102,9.41988574 9,10.1557726" id="椭圆形备份-3" transform="translate(11.207754, 9.577886) scale(-1, 1) translate(-11.207754, -9.577886) "></path>
+                    <circle id="椭圆形" cx="9" cy="4.5" r="4.5"></circle>
+                    <line x1="12" y1="15" x2="21" y2="6" id="路径-21"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

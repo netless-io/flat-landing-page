@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形备份 25</title>
+    <g id="Flat-Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="landingpage" transform="translate(-120.000000, -1655.000000)" stroke="#3381FF" stroke-width="1.5">
+            <g id="编组-24" transform="translate(0.000000, 1304.000000)">
+                <g id="编组-23" transform="translate(120.000000, 160.000000)">
+                    <g id="invite备份-6" transform="translate(0.000000, 191.000000)">
+                        <g id="编组-40" transform="translate(6.000000, 9.000000)">
+                            <path d="M9,9 C4.02943725,9 0,13.0294373 0,18" id="椭圆形"></path>
+                            <path d="M9,0 C6.51471863,0 4.5,2.01471863 4.5,4.5 C4.5,6.98528137 6.51471863,9 9,9" id="路径"></path>
+                        </g>
+                        <g id="编组-40备份" transform="translate(12.000000, 9.000000)">
+                            <path d="M9,9 C4.02943725,9 0,13.0294373 0,18" id="椭圆形"></path>
+                            <path d="M18,9 C13.0294373,9 9,13.0294373 9,18" id="椭圆形备份-9" transform="translate(13.500000, 13.500000) scale(-1, 1) translate(-13.500000, -13.500000) "></path>
+                            <circle id="椭圆形" cx="9" cy="4.5" r="4.5"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

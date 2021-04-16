@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <g id="Flat-Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landingpage" transform="translate(-700.000000, -1126.000000)" fill="#007ADD" fill-rule="nonzero">
+            <g id="编组-20" transform="translate(0.000000, 964.000000)">
+                <g id="编组-3" transform="translate(640.000000, 124.000000)">
+                    <g id="编组-15" transform="translate(60.000000, 38.000000)">
+                        <path d="M2,6.9005 L16.3940234,4.88 L16.4,19.1959766 L2.0135,19.28 L2,6.9005 Z M16.3894883,20.8160117 L16.4,35.12 L2,33.0844883 L2,20.72 L16.3894883,20.8159766 L16.3894883,20.8160117 Z M17.84,4.8485 L38,2 L38,19.1254883 L17.84,19.28 L17.84,4.8485 Z M38,20.7500234 L37.9955,38 L17.8685117,35.2129883 L17.84,20.72 L38,20.7515 L38,20.7500234 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

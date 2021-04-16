@@ -1,0 +1,69 @@
+.icon {
+    width: 36px;
+    height: 36px;
+}
+
+.download-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.router {
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 56px;
+    border-radius: 28px;
+    border: 1px solid #3381FF;
+    color: #3381FF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3381FF;
+    color: white;
+}
+
+.btn:hover img {
+    filter: grayscale(1) brightness(3);
+}
+
+/* 一级描述 */
+.sec-desc {
+    color: var(--main-color);
+    font-size: 24px;
+    margin: 0;
+}
+
+/* 二级描述 */
+.sec-desc-2 {
+    color: var(--main-color);
+    font-size: 16px;
+    opacity: 0.64;
+    margin: 0;
+}
+
+/* header */
+.sec-header {
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
