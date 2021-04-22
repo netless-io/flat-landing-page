@@ -60,6 +60,12 @@ section {
     z-index: 1;
 }
 
+.sec-1--mark {
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+}
+
 .sec-1--right {
     position: absolute;
     right: 120px;
@@ -219,6 +225,7 @@ footer {
 .sec-tab--img > img {
     max-width: 100%;
     object-fit: contain;
+    border-radius: 8px;
 }
 
 .sec-6 {
