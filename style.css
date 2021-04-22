@@ -150,6 +150,10 @@ footer {
     color: var(--main-color);
 }
 
+.sec-3--download-list small {
+    opacity: 0.64;
+}
+
 .sec-3-desc-1 {
     color: var(--white-color);
 }

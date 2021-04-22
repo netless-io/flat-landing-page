@@ -8,8 +8,19 @@
     height: 40px;
 }
 
+.landing-page-navs {
+    display: inline-flex;
+    align-items: center;
+}
+
 .router {
     cursor: pointer;
+}
+
+.router.aside {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 8px;
 }
 
 .router select {
