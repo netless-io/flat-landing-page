@@ -70,6 +70,8 @@ section {
     position: absolute;
     right: 120px;
     bottom: 0;
+    transform: scale(0.5);
+    transform-origin: bottom right;
 }
 
 .sec-3 > div {
@@ -78,6 +80,7 @@ section {
 
 .sec-4 {
     background: url("./image/sec4.svg");
+    background-color: #2e3440;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -85,6 +88,7 @@ section {
 
 .sec-7 {
     background: url("./image/sec7.svg");
+    background-color: #f8faff;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;

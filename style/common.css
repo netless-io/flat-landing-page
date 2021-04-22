@@ -12,6 +12,14 @@
     cursor: pointer;
 }
 
+.router select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    color: var(--main-color);
+}
+
 .btn {
     display: flex;
     align-items: center;
