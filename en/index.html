@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Agora Flat</title>
-    <meta http-equiv="refresh" content="0; url=/">
-    <link rel="canonical" href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    English version is under construction.<br>
-    Navigating to homepage...
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Agora Flat Online Classroom</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <nav class="landing-page-nav">
+            <div class="landing-page-icon">
+                <img src="../image/flat-icon.svg" alt="logo">
+            </div>
+            <ul class="landing-page-navs">
+                <li class="router"><a href="https://flat.whiteboard.agora.io">首页</a></li>
+                <li class="router"><a href="https://github.com/netless-io/flat" target="_blank">GitHub</a></li>
+                <li class="router">
+                    <label for="lang">🌐</label>
+                    <select id="lang"></select>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="sec-1">
+                <div class="sec-1--mark">
+                    <img src="../image/mark.svg" alt="mark">
+                </div>
+                <div class="sec-1--right">
+                    <img src="../image/hero-image.png" alt="big image">
+                </div>
+                <div class="sec-1--left">
+                    <p class="sec-1--agreement">MIT Licensed</p>
+                    <p class="sec-1--desc-1">Agora Flat Online Classroom</p>
+                    <p class="sec-1--desc-2">Build real-time interactive virtual classroom with ease.</p>
+                    <a href="https://github.com/netless-io/flat" target="_blank" class="btn get-source-btn">
+                        <img style="width: 28px; height: 28px;" src="../image/github.svg" alt="Github">
+                        <span>Source Code</span>
+                    </a>
+                </div>
+            </section>
+            <section class="sec-2">
+                <div class="sec-header">
+                    <img class="icon" src="../image/source.svg" alt="source">
+                    <p class="sec-2--desc-1 sec-desc">Agora Flat & Open Source</p>
+                </div>
+                <p class="sec-2--desc-2">
+                    Agora Flat was born out of an exploratory project in which we investigated customer needs and user experience.
+                    After receiving good internal feedback, we believe that Flat has the potential to become an online classroom product that can really help people and have a good user experience.
+                    We hope that the transfer cost of knowledge can be reduced a little through Flat.
+                    <br><br>
+                    We knew that our power alone wasn’t enough, so we decided to open source, give as many developers as possible the opportunity to participate, and pool the ideas and power of the community until Flat becomes something useful.
+                    <br><br>
+                    As you can see, Flat is not perfect yet, but it grows up day by day. We are very happy to share this joy with you.
+                </p>
+            </section>·
+            <section class="sec-3">
+                <div class="sec-header">
+                    <img class="icon" src="../image/download.svg" alt="download">
+                    <p class="sec-3--desc-1 sec-desc">Download</p>
+                </div>
+                <div class="sec-3--download-list">
+                    <a href="https://flat-storage.oss-cn-hangzhou.aliyuncs.com/versions/latest/beta/mac/Flat-1.0.0-beta.1.dmg">
+                        <img class="download-icon margin-bottom-20" src="../image/mac.svg" alt="mac">
+                        <span>macOS</span>
+                    </a>
+                    <a href="https://flat-storage.oss-cn-hangzhou.aliyuncs.com/versions/latest/beta/win/Flat-1.0.0-beta.1.exe">
+                        <img class="download-icon margin-bottom-20" src="../image/windows.svg" alt="windows">
+                        <span>Windows</span>
+                    </a>
+                    <a href="https://flat-storage.oss-cn-hangzhou.aliyuncs.com/release/flat.apk">
+                        <img class="download-icon margin-bottom-20" src="../image/android.svg" alt="android">
+                        <span>Android</span>
+                    </a>
+                </div>
+            </section>
+            <section class="sec-4">
+                <div class="sec-header">
+                    <img class="icon" src="../image/sec4-icon1.svg" alt="bigclass">
+                    <p class="sec-3-desc-1 sec-desc">Create Multifunctional Virtual Classrooms</p>
+                </div>
+                <p class="sec-desc-2 margin-top-12 white">Three types of built-in classrooms empowering high quality teaching.</p>
+                <div class="sec-4--main">
+                    <div class="sec-tab">
+                        <div class="sec-tab--item sec-tab--big active">
+                            <div style="display: flex">
+                                <img class="icon" src="../image/sec4-icon1.svg" alt="bigclass">
+                                <p class="sec-tab--big-class">Big Class</p>
+                            </div>
+                            <p class="sec-tab-desc">For speaking to large audience. Students can join conversations by rasing hands.</p>
+                        </div>
+                        <div class="sec-tab--item sec-tab--small">
+                            <div style="display: flex">
+                                <img class="icon" src="../image/sec4-icon2.svg" alt="smallclass">
+                                <p class="sec-tab--big-class">Small Class</p>
+                            </div>
+                            <p class="sec-tab-desc">For 1 teacher with 2～16 students. A nice balance of interactivity and efficiency.</p>
+                        </div>
+                        <div class="sec-tab--item sec-tab--one">
+                            <div style="display: flex">
+                                <img class="icon" src="../image/sec4-icon3.svg" alt="one2one">
+                                <p class="sec-tab--big-class">One on One</p>
+                            </div>
+                            <p class="sec-tab-desc">Students can quickly build their confidence with personalized high quality interaction.</p>
+                        </div>
+                    </div>
+                    <div class="sec-tab--img">
+                        <img src="./image/sec4-img1.png" alt="sec_4">
+                        <img src="./image/sec4-img2.png" alt="sec_4" style="display: none;">
+                        <img src="./image/sec4-img3.png" alt="sec_4" style="display: none;">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-5">
+                <div class="sec-header">
+                    <img class="icon" src="../image/sec5-icon.svg" alt="skin">
+                    <p class="sec-desc">Custom theme and UI</p>
+                    <p class="sec-desc-2" style="margin-left: 8px">(Under Development)</p>
+                </div>
+                <p class="sec-desc-2 margin-top-12">Built-in themes that are carefully crafted by our designers and developers.</p>
+                <div>
+                    <img style="width: 720px; height: 525px; margin-top: 32px;" src="./image/sec5-img.png" alt="sec_5">
+                </div>
+            </section>
+            <section class="sec-6">
+                <div class="sec-header">
+                    <img class="icon" src="../image/sec6-icon.svg" alt="plugin">
+                    <p class="sec-desc">Plugins: unlimited combinations, unlimited possibility</p>
+                </div>
+                <p class="sec-desc-2 margin-top-12">Customize your needs with flexible whiteboard plugins.</p>
+                <div>
+                    <img style="width: 740px; height: 493px; margin-top: 32px;" src="./image/sec6-img.png" alt="sec_6">
+                </div>
+            </section>
+            <section class="sec-7">
+                <div class="sec-header">
+                    <p class="sec-desc">Get 10,000 minutes of usage per month for free</p>
+                    <p class="sec-desc-2 margin-top-12">Whether you want to create self-brand online virtual classroom or offer clients online education products/solutions, Agora Flat got the service and tools you need to keep growing.</p>
+                </div>
+                <a href="https://github.com/netless-io/flat" target="_blank" class="btn create-btn">Start Now</a>
+            </section>
+        </main>
+        <footer>
+            <div>Copyright © 2021 Agora. All rights reserved.</div>
+            <div class="flex">
+                <img src="../image/email.svg" alt="email">
+                <a class="white" href="mailto:flat@agora.io">flat@agora.io</a>
+            </div>
+        </footer>
+        <script src="../main.js"></script>
+    </body>
 </html>
