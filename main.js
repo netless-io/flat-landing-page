@@ -38,7 +38,7 @@
     $('#lang').on('change', (e) => {
         language = e.target.value
         localStorage.setItem(langKey, language)
-        window.location.href = `/${language}/`
+        window.location.href = language === "zh-CN" ? '/' : `/${language}/`
     })
 
     if (location.pathname === "/" && language !== "zh-CN") {
