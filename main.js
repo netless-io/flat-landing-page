@@ -18,7 +18,7 @@
     const langKey = "flat:language"
     const languages = [
         { key: "zh-CN", name: "中文" },
-        // { key: "en", name: "English" },
+        { key: "en", name: "English" },
     ]
     let language = localStorage.getItem(langKey) || navigator.language
     if (!languages.some(e => e.key === language)) {
