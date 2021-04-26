@@ -26,14 +26,6 @@
     }
     const currentLanguage = location.pathname.split("/").filter(Boolean)[0] || "zh-CN"
 
-    if (!localStorage.getItem(langKey)) {
-        const language = languages.some(e => e.key === navigator.language) ? navigator.language : "en";
-        if (language !== currentLanguage) {
-            window.location.href = langHref[language]
-            return
-        }
-    }
-
     let select = $('#lang')
     select.innerHTML = ""
     languages.forEach(({ key, name }) => {
