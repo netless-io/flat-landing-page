@@ -20,10 +20,18 @@
         { key: "zh-CN", name: "中文" },
         { key: "en", name: "English" },
     ]
-    let language = localStorage.getItem(langKey) || navigator.language
-    if (!languages.some(e => e.key === language)) {
-        language = location.pathname === "/" ? "zh-CN" : "en"
-        localStorage.setItem(langKey, language)
+    const langHref = {
+        "zh-CN": "/",
+        "en": "/en/",
+    }
+    const currentLanguage = location.pathname.split("/").filter(Boolean)[0] || "zh-CN"
+
+    if (!localStorage.getItem(langKey)) {
+        const language = languages.some(e => e.key === navigator.language) ? navigator.language : "en";
+        if (language !== currentLanguage) {
+            window.location.href = langHref[language]
+            return
+        }
     }
 
     let select = $('#lang')
@@ -33,16 +41,12 @@
         option.textContent = name
         select.append(option)
     })
-    select.value = language
+    select.value = currentLanguage
 
     $('#lang').on('change', (e) => {
-        language = e.target.value
+        const language = e.target.value
         localStorage.setItem(langKey, language)
-        window.location.href = language === "zh-CN" ? '/' : `/${language}/`
+        window.location.href = langHref[language]
     })
-
-    if (location.pathname === "/" && language !== "zh-CN") {
-        window.location.href = `/${language}/`
-    }
 
 })();
