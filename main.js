@@ -35,6 +35,7 @@
     }
 
     let select = $('#lang')
+    select.innerHTML = ""
     languages.forEach(({ key, name }) => {
         const option = document.createElement('option')
         option.value = key
