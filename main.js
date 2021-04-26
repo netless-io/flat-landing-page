@@ -36,7 +36,7 @@
     })
     select.value = currentLanguage
 
-    $('#lang').on('change', (e) => {
+    select.on('change', (e) => {
         const language = e.target.value
         localStorage.setItem(langKey, language)
         window.location.href = langHref[language]
