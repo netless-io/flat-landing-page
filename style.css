@@ -139,9 +139,12 @@ footer {
 }
 
 .sec-2 > .sec-2--desc-2{
+    max-width: 1200px;
     margin: 32px 120px;
     color: var(--main-color);
     font-size: 16px;
+    text-indent: 2em;
+    line-height: 1.75;
 }
 
 .sec-3--download-list {
@@ -242,4 +245,9 @@ footer {
 
 .sec-7 {
     padding-bottom: 56px;
+}
+
+.keep-growing {
+    text-align: center;
+    line-height: 1.75;
 }
