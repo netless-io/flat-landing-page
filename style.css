@@ -47,12 +47,18 @@ section {
 }
 
 .sec-1 {
+    background: rgba(51, 129, 255, 0.04);
+}
+
+.sec-1--content {
+    width: 100%;
+    max-width: 1400px;
+    height: 590px;
+    margin: 0 auto;
+    padding-left: 24px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-left: 120px;
-    height: 590px;
-    background: rgba(51, 129, 255, 0.04);
     position: relative;
 }
 
@@ -68,7 +74,7 @@ section {
 
 .sec-1--right {
     position: absolute;
-    right: 120px;
+    right: 24px;
     bottom: 0;
     transform: scale(0.5);
     transform-origin: bottom right;
