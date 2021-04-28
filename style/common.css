@@ -8,6 +8,21 @@
     height: 40px;
 }
 
+.landing-page-nav-wrap {
+    background: rgba(51, 129, 255, 0.04);
+}
+
+.landing-page-nav {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .landing-page-navs {
     display: inline-flex;
     align-items: center;
