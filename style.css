@@ -233,3 +233,13 @@ footer {
     text-align: center;
     line-height: 1.75;
 }
+
+.sec-brother {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: #7A7B7C;
+}
