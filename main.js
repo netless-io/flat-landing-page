@@ -1,12 +1,12 @@
-;(function(){
+void function() {
     "use strict"
 
     const $ = sel => document.querySelector(sel)
     const $$ = sel => Array.from(document.querySelectorAll(sel))
     Node.prototype.on = Node.prototype.addEventListener
 
-    let tabs = $$('.sec-tab--item')
-    let imgs = $$('.sec-tab--img img')
+    let tabs = $$('.tabs .items .item')
+    let imgs = $$('.tabs .images img')
     function updateTab(activeTab) {
         tabs.forEach((tab, i) => {
             const visible = tab.classList.toggle('active', tab === activeTab)
@@ -15,9 +15,10 @@
     }
     tabs.forEach(tab => tab.on('click', updateTab.bind(null, tab)))
 
+
     const langKey = "flat:language"
     const languages = [
-        { key: "zh-CN", name: "中文" },
+        { key: "zh-CN", name: "简体中文" },
         { key: "en", name: "English" },
     ]
     const langHref = {
@@ -42,4 +43,4 @@
         window.location.href = langHref[language]
     })
 
-})();
+}();
