@@ -42,10 +42,6 @@ select {
     cursor: pointer;
 }
 
-a:hover, select:hover {
-    color: black;
-}
-
 /*===========================================================================*/
 
 .flex {
@@ -116,17 +112,30 @@ a:hover, select:hover {
     color: black;
 }
 
-.get-source-btn, .start-btn {
+.start-btn {
     padding: .618em 2.718em;
-    border: 1px solid var(--primary-color, #3381FF);
-    color: var(--primary-color, #3381FF);
-}
-.get-source-btn:hover, .start-btn:hover {
     color: white;
     background: var(--primary-color, #3381FF);
+    transition: background-color .3s;
 }
-.get-source-btn:hover img {
-    filter: grayscale(1) brightness(3)
+
+.start-btn:hover {
+    background: #3373da;
+    transition: background-color .3s;
+}
+
+.get-source-btn {
+    padding: .618em 2.718em;
+    margin-left: 1.2em;
+    background-color: #e3edff;
+    color: #4f5959;
+    border-color: #e3edff;
+    transition: opacity .3s;
+}
+
+.get-source-btn:hover {
+    opacity: .8;
+    transition: opacity .3s;
 }
 
 .opensource {
@@ -223,9 +232,16 @@ a:hover, select:hover {
     .hero {
         margin-bottom: 3em;
     }
+    .start-btn--first {
+        position: absolute;
+        left: 30%;
+        bottom: -1.5em;
+        transform: translate(-50%, 100%);
+    }
+
     .get-source-btn {
         position: absolute;
-        left: 50%;
+        left: 70%;
         bottom: -1.5em;
         transform: translate(-50%, 100%);
     }
@@ -262,7 +278,7 @@ a:hover, select:hover {
         transform: scale(0.5);
         transform-origin: bottom right;
     }
-    .get-source-btn, .start-btn {
+    .start-btn, .get-source-btn {
         margin-top: 0;
     }
     .opensource p {
