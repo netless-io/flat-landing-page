@@ -232,18 +232,13 @@ select {
     .hero {
         margin-bottom: 3em;
     }
-    .start-btn--first {
+    
+    .btn-group {
         position: absolute;
-        left: 30%;
-        bottom: -1.5em;
-        transform: translate(-50%, 100%);
-    }
-
-    .get-source-btn {
-        position: absolute;
-        left: 70%;
-        bottom: -1.5em;
-        transform: translate(-50%, 100%);
+        justify-content: center;
+        flex-flow: row wrap;
+        width: 100%;
+        bottom: -5.5em;
     }
 }
 
