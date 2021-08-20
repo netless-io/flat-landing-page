@@ -331,3 +331,14 @@ select {
         height: 493px;
     }
 }
+@media (min-width: 70em) {
+    .navheader {
+        margin: 0 120px;
+    }
+    .hero .content {
+        margin: 0 120px;
+    }
+    .hero .image {
+        right: 120px;
+    }
+}
