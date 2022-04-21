@@ -96,10 +96,19 @@ select {
 }
 .hero h1 {
     font-size: 32px;
+    text-align: center;
 }
 .hero .desc {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
+    line-height: 1.75;
+    text-indent: 2em;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero .desc.last {
+    margin-bottom: 1em;
 }
 .hero .image img {
     max-width: 100%;
@@ -255,11 +264,13 @@ select {
         padding-left: 24px;
     }
     .hero h1 {
-        font-size: 40px;
+        text-align: left;
     }
     .hero .desc {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 300;
+        line-height: 1.75;
+        width: 40%;
     }
     .hero .image {
         display: block;
