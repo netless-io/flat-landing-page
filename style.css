@@ -160,29 +160,58 @@ select {
 .download-list {
     display: flex;
     flex-flow: column nowrap;
+    position: relative;
 }
-.download-list a {
+.download-list > a,
+.download-list-macos {
     display: flex;
     align-items: center;
     padding: 16px;
     border-radius: 16px;
     border: 1px solid var(--silver-color, #DBE1EA);
 }
-.download-list a:not(:first-child) {
+.download-list > a:not(:first-child) {
     margin-top: 20px;
 }
-.download-list a:hover {
+.download-list > a:hover,
+.download-list-macos:hover {
     border-color: #f1f2f3;
     box-shadow: 0 8px 24px 0 rgb(0 0 0 / 8%);
 }
-.download-list a img {
+.download-list > a img,
+.download-list-macos img {
     width: 40px;
     height: 40px;
     margin-right: 16px;
 }
+.download-list-macos-list {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 8px;
+    overflow: hidden;
+    transition: height .3s;
+}
+.download-list-macos .download-list-macos-list {
+    height: 0;
+}
+.download-list-macos:hover .download-list-macos-list {
+    height: 18px;
+}
+.download-list-macos-list a:hover,
+.download-list-extra a:hover {
+    text-decoration: underline var(--gray-color, #7A7B7C);
+}
 .download-list small {
-    padding: 0 8px;
-    color: var(--gray-color, 7A7B7C);
+    padding: 0;
+    color: var(--gray-color, #7A7B7C);
+}
+.download-list-extra {
+    position: absolute;
+    top: 37px;
+    right: 32px;
+    transform: translateY(-50%);
+    color: var(--gray-color, #7A7B7C);
 }
 
 .kinds {
@@ -297,7 +326,8 @@ select {
         flex-flow: row wrap;
         justify-content: center;
     }
-    .download-list a {
+    .download-list > a,
+    .download-list-macos {
         width: 160px;
         height: 160px;
         display: flex;
@@ -307,13 +337,22 @@ select {
                     box-shadow .2s ease;
         cursor: pointer;
     }
-    .download-list a:not(:first-child) {
+    .download-list > a:not(:first-child) {
         margin-top: 0;
         margin-left: 20px;
     }
-    .download-list a img {
+    .download-list > a img,
+    .download-list-macos img {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+    .download-list-extra {
+        position: absolute;
+        top: 110%;
+        left: calc(50% - 360px);
+        right: auto;
+        transform: translateX(-50%);
+        color: var(--gray-color, #7A7B7C);
     }
     .kinds .tabs {
         flex-flow: row nowrap;
