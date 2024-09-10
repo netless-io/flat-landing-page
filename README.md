@@ -1,1 +1,1 @@
-<samp>-> <a href="https://flat.whiteboard.agora.io">flat.whiteboard.agora.io</a></samp>
+<samp>-> <a href="https://www.flat.apprtc.cn/">https://www.flat.apprtc.cn/</a></samp>
