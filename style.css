@@ -22,6 +22,12 @@
  * class="component(optional) atom1 atom2..."
  */
 
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     --main-color: #444E60;
     --gray-color: #7A7B7C;
@@ -29,6 +35,9 @@ body {
     --primary-color: #3381FF;
     color: var(--main-color, #444E60);
     line-height: 1.5;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -89,6 +98,7 @@ select {
     position: relative;
     padding-top: 64px;
     padding-left: 12px;
+    padding-right: 12px;
     background-color: rgba(51, 129, 255, 0.04);
     background-image: url(./image/mark.svg);
     background-size: contain;
@@ -105,6 +115,8 @@ select {
     line-height: 1.75;
     text-indent: 2em;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -225,6 +237,9 @@ select {
 .kinds .tabs {
     margin: 40px 12px;
     flex-flow: column nowrap;
+    width: calc(100% - 24px);
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .kinds .item {
     cursor: pointer;
@@ -277,7 +292,19 @@ select {
         justify-content: center;
         flex-flow: row wrap;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        padding: 0 12px;
         bottom: -5.5em;
+    }
+    
+    .hero .content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
     }
 }
 
@@ -420,12 +447,12 @@ select {
 }
 
 .img-tooltip-bottom,
-.img-tooltip-right {
+.img-tooltip-top {
     position: relative;
 }
 
 .img-tooltip-bottom:hover .tooltip-image,
-.img-tooltip-right:hover .tooltip-image {
+.img-tooltip-top:hover .tooltip-image {
     visibility: visible;
     opacity: 1;
 }
@@ -442,16 +469,16 @@ select {
     transform: translateX(-50%) translateY(0);
 }
 
-.img-tooltip-right .tooltip-image {
+.img-tooltip-top .tooltip-image {
     width: 150px;
     height: 150px;
-    left: calc(100% + 15px);
-    top: 50%;
-    transform: translateY(-50%) translateX(-10px);
+    bottom: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
 }
 
-.img-tooltip-right:hover .tooltip-image {
-    transform: translateY(-50%) translateX(0);
+.img-tooltip-top:hover .tooltip-image {
+    transform: translateX(-50%) translateY(0);
 }
 
 /*===========================================================================*/
